@@ -4,7 +4,15 @@
 // -3 -> 9
 // -7 -> 49
 
-Console.Write("Enter the number: ");
-int number = Console.ReadLine();
-Console.Write("Square of the number is ");
-Console.WriteLine(nuintmber*number);
+// Принимаем на вход число (ReadLine принимает только как string)
+Console.Write("Enter an integer number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+// Вывести на квадратный уровень
+int square = number * number;
+
+// Вывод результата
+// Первый метод (нужно учитывать пробелы)
+//Console.WriteLine(number + " -> " + square);
+// Метод интерполяции:
+Console.WriteLine($"{number} -> {square}");
