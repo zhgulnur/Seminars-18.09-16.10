@@ -4,7 +4,7 @@
 // 5 -> Пятница
 
 Console.Write("Enter a number: ");
-string a = Console.ReadLine();
+string? a = Console.ReadLine();
 
 if (a == "1")
 {
