@@ -16,7 +16,7 @@ bool Weekend(int day)
     return day == 6 || day == 7;
 }
 
-int digit = GetUserInput("Enter a digit indicating the day of the week: ");
+int digit = GetUserInput("Enter a digit indicating the day of the week");
 bool answer = Weekend(digit);
 
 if (digit<1 || digit>7) Console.WriteLine($"Input error! {digit} is not a digit indicating the day of the week.");
