@@ -22,10 +22,44 @@ bool Palindrome(int numInitial)
     return (num1 == num5) && (num2 == num4);
 }
 
-int number = GetUserInput("Enter the number");
-if (number>=10000 && number<=99999)
-{
-    bool result = Palindrome(number);
-    Console.WriteLine(result ? $"{number} -> yes" : $"{number} -> no");
-}
-else Console.WriteLine("Input error!");
+
+
+// Через АВТОТЕСТ
+// int number = GetUserInput("Enter the number");
+// if (number>=10000 && number<=99999)
+// {
+//     bool result = Palindrome(number);
+//     Console.WriteLine(result ? $"{number} -> yes" : $"{number} -> no");
+// }
+// else Console.WriteLine("Input error!");
+
+
+// using System;
+
+// public class Answer
+// {
+//     static bool IsPalindrome(int number){
+//       // Введите свое решение ниже
+//       int num1 = number / 10000;
+//       int num2 = (number / 1000) % 10;
+//       int num4 = (number / 10) % 10;
+//       int num5 = number % 10;
+//       return (num1 == num5) && (num2 == num4);
+//     }
+  
+//   // Не удаляйте и не меняйте метод Main! 
+//       static public void Main(string[] args) {
+//         int number;
+
+//         if (args.Length >= 1) {
+//             number = int.Parse(args[0]);
+//         } else {
+//            // Здесь вы можете поменять значения для отправки кода на Выполнение
+//             number = 645464;
+//         }
+
+//         // Не удаляйте строки ниже
+//         bool result = IsPalindrome(number);
+//         System.Console.WriteLine(result ? $"{result}" : $"Число не пятизначное\n{result}");
+//     }
+// }
