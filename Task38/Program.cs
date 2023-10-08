@@ -17,7 +17,7 @@ double[] RandomArray(int arrLength, int min, int max)
 double MinimumNumber (double[] array)
 {
     double minNumber=array[0];
-    for (int i=0; i < array.Length; i = i++)
+    for (int i=0; i < array.Length; i++)
     {
         if (array[i] < minNumber) minNumber = array[i];
     }
@@ -27,7 +27,7 @@ double MinimumNumber (double[] array)
 double MaximumNumber (double[] array)
 {
     double maxNumber=array[0];
-    for (int i=0; i < array.Length; i = i++)
+    for (int i=0; i < array.Length; i++)
     {
         if (array[i] > maxNumber) maxNumber = array[i];
     }
