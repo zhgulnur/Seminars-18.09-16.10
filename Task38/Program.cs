@@ -6,10 +6,10 @@
 double[] RandomArray(int arrLength, int min, int max)
 {
     double[] arr = new double[arrLength];
-    Random rand = new Random();
+    Random rnd = new Random();
     for (int i = 0; i < arrLength; i++)
     {
-        arr[i] = rand.Next(min, max+1);
+        arr[i] = rnd.NextDouble() * (max - min) + min;;
     }
     return arr;
 }
