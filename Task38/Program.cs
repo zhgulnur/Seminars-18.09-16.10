@@ -9,7 +9,7 @@ double[] RandomArray(int arrLength, int min, int max)
     Random rnd = new Random();
     for (int i = 0; i < arrLength; i++)
     {
-        arr[i] = rnd.NextDouble() * (max - min) + min;;
+        arr[i] = rnd.NextDouble() * (max - min) + min;
     }
     return arr;
 }
